@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.card {
+  border: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*Scroll style start*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #003a78;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+/*Scroll style end*/
+
+.p-tooltip .p-tooltip-text {
+  width: max-content;
+  max-width: 400px;
+  background: #003a78;
+  opacity: 0.90;
+  color: #ffffff;
+  padding: 0.75rem 0.75rem;
+  box-shadow: 0 2px 12px 0 rgba(5, 153, 204, 0.1);
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif !important;
+}
+.p-tooltip.p-tooltip-right .p-tooltip-arrow {
+  border-right-color: #003a78;
+  opacity: 0.90;
+}
+.p-tooltip.p-tooltip-left .p-tooltip-arrow {
+  border-left-color: #003a78;
+  opacity: 0.90;
+}
+.p-tooltip.p-tooltip-top .p-tooltip-arrow {
+  border-top-color: #003a78;
+  opacity: 0.90;
+}
+.p-tooltip.p-tooltip-bottom .p-tooltip-arrow {
+  border-bottom-color: #003a78;
+  opacity: 0.90;
+}
+.mdc-tooltip__surface {
+  max-width: unset !important;
+  width: 290px;
+  background-color: #003a78 !important;
+}

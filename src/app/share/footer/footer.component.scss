@@ -1,0 +1,40 @@
+.footer {
+  background-image: url(../../../assets/images/header12_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  span,
+  i {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .footer {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer {
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<div class="main py-5">
+  <div class="row px-2">
+    <h1 class="py-2 text-center">Proqram təminatları</h1>
+    <div
+      class="col-lg-4 col-md-12 col-sm-12 p-2"
+      *ngFor="let project of projects"
+    >
+      <div class="my-card p-3">
+        <a [href]="project.url" target="_blank" class="projectUrl">
+          <div class="icon d-flex justify-content-between">
+            <div><i [class]="project.icon"></i></div>
+            <div *ngIf="project.status == 'yeni'">
+              <img src="../../../assets/images/yeni.svg" alt="" />
+            </div>
+          </div>
+          <h3 class="pt-3">{{ project.title }}</h3>
+          <span [pTooltip]="project?.description" tooltipPosition="bottom">
+            {{ project.description }}
+          </span>
+          <div class="dateTime d-flex justify-content-between next p-0 m-0">
+            <div>
+              <span class="pt-3">{{ project.date }}</span>
+            </div>
+            <div><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="card flex justify-content-center py-3">
+      <p-paginator
+        (onPageChange)="onPageChange($event)"
+        [first]="first"
+        [rows]="rows"
+        [totalRecords]="120"
+        [rowsPerPageOptions]="[10, 20, 30]"
+      />
+    </div>
+  </div>
+</div>

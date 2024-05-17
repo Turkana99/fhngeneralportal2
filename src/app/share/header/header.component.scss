@@ -1,0 +1,71 @@
+.title{
+  width: 50%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+  }
+  p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0.7;
+  }
+}
+.particle {
+  position: relative;
+  height: 590px;
+  background-image: url('../../../assets/images/header12.png');
+  background-size: cover;
+  background-position: (100%, 50%);
+  // clip-path: ellipse(100% 55% at 48% 44%);
+  clip-path: ellipse(100% 100% at 50% 0%);
+  /* Add other background styles as needed */
+}
+.particles-container {
+  position: relative; /* Ensure relative positioning */
+  overflow: hidden; /* Hide overflow */
+}
+
+
+@media screen and (max-width: 1000px) {
+  .title {
+    h1{
+      font-size: 30px!important;
+      line-height: 35px;
+    }
+    p{
+      font-size: 16px;
+      opacity: 0.7;
+    }
+    svg{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    h1{
+      font-size: 25px!important;
+      line-height: 30px;
+    }
+    p{
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    svg{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
