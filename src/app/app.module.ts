@@ -7,7 +7,6 @@ import { HeaderComponent } from './share/header/header.component';
 import { FooterComponent } from './share/footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { PaginatorModule } from 'primeng/paginator';
-import { NgParticlesModule } from 'ng-particles';
 import { TooltipModule } from 'primeng/tooltip';
 import { MaterialModule } from './material.module';
 
@@ -22,7 +21,6 @@ import { MaterialModule } from './material.module';
     BrowserModule,
     AppRoutingModule,
     PaginatorModule,
-    NgParticlesModule,
     TooltipModule,
     MaterialModule
   ],

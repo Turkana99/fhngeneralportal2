@@ -36,5 +36,40 @@
     h1 {
       font-size: 24px;
     }
+    span,
+    i {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer {
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    span,
+    i {
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    h1 {
+      font-size: 12px;
+    }
+    span,
+    i {
+      font-size: 6px;
+    }
   }
 }
